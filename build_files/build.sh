@@ -25,5 +25,6 @@ systemctl enable podman.socket
 
 # install VirtualBox using script from bazzite-virtualbox
 curl -L -o /tmp/vbox.sh "https://raw.githubusercontent.com/Preston159/bazzite-virtualbox/refs/heads/main/build.sh"
+sed -i 's/bazzite/aurora/g' /tmp/vbox.sh
 chmod +x /tmp/vbox.sh
 /tmp/vbox.sh
