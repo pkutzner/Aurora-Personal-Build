@@ -32,4 +32,4 @@ curl -L -o /tmp/download_workstation.sh "https://gist.github.com/pkutzner/87db9b
 chmod +x /tmp/download_workstation.sh
 /tmp/download_workstation.sh -v 17.6.4
 chmod +x /tmp/VMware-Workstation-Full-17.6.4-24832109.x86_64.bundle
-/tmp/VMware-Workstation-Full-17.6.4-24832109.x86_64.bundle --deferred-gtk --eulas-agreed
+/tmp/VMware-Workstation-Full-17.6.4-24832109.x86_64.bundle --deferred-gtk --eulas-agreed -I --console
