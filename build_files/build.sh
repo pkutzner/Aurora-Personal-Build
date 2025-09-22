@@ -24,7 +24,12 @@ dnf5 install -y tmux aria2.x86_64
 systemctl enable podman.socket
 
 # install VirtualBox using script from bazzite-virtualbox
-curl -L -o /tmp/vbox.sh "https://raw.githubusercontent.com/Preston159/bazzite-virtualbox/refs/heads/main/build.sh"
-sed -i 's/bazzite/fc42/g' /tmp/vbox.sh
-chmod +x /tmp/vbox.sh
-/tmp/vbox.sh
+#curl -L -o /tmp/vbox.sh "https://raw.githubusercontent.com/Preston159/bazzite-virtualbox/refs/heads/main/build.sh"
+#sed -i 's/bazzite/fc42/g' /tmp/vbox.sh
+#chmod +x /tmp/vbox.sh
+#/tmp/vbox.sh
+curl -L -o /tmp/download_workstation.sh "https://gist.github.com/pkutzner/87db9b055c7123eda0ac304c7879d14b/raw/3788f9b2cada61bb8708393aaf14f1091ab1608c/download_workstation.sh"
+chmod +x /tmp/download_workstation.sh
+/tmp/download_workstation.sh -v 17.6.4
+chmod +x /tmp/VMware-Workstation-Full-17.6.4-24832109.x86_64.bundle
+/tmp/VMware-Workstation-Full-17.6.4-24832109.x86_64.bundle --deferred-gtk --eulas-agreed
